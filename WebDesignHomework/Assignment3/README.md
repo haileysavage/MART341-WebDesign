@@ -23,5 +23,5 @@ An important concept I would like to discuss further is **how to optimize URLs f
 
 For more information about URLs, you can check out [this resource on Mozilla](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_is_a_URL).
 
-![Internet Diagram](https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Internet_map_1024.jpg/1200px-Internet_map_1024.jpg)
+![Internet Diagram](https://www.google.com/url?sa=i&url=https%3A%2F%2Fmbrjournal.com%2F2022%2F08%2F14%2Fa-brief-history-of-the-internet-and-the-world-wide-web%2F&psig=AOvVaw2YlzUkSLNkQ_sY6dTCi0p6&ust=1726162676736000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKiJh563u4gDFQAAAAAdAAAAABAE)
 
