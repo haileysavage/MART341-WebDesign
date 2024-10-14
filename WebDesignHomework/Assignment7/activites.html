@@ -1,0 +1,56 @@
+<style>
+    body {
+        background-color: #f0f8ff; /* Light blue background */
+        font-family: Arial, sans-serif; /* Font styling */
+    }
+    table {
+        width: 100%; /* Table width */
+        border-collapse: collapse; /* Collapsed borders */
+    }
+    th, td {
+        border: 1px solid #ccc; /* Border for table cells */
+        padding: 8px; /* Cell padding */
+        text-align: left; /* Text alignment */
+    }
+    img {
+        width: 100%; /* Control image width */
+        height: auto; /* Maintain aspect ratio */
+    }
+</style>
+
+<img src="https://embracesomeplace.com/wp-content/uploads/2020/04/DSC06289.jpg" alt="Skyline Loop trail at Mt Rainier National Park" title="Skyline Loop" width="600" height="400">
+
+<table>
+    <tr>
+        <th>Activity</th>
+        <th>Description</th>
+        <th>Rating</th>
+        <th>Available</th>
+    </tr>
+    <tr>
+        <td>Hiking</td>
+        <td>A scenic hike in the mountains.</td>
+        <td>5/5</td>
+        <td><input type="checkbox"></td>
+    </tr>
+    <tr>
+        <td>Beach Day</td>
+        <td>Relaxing on the sandy beaches.</td>
+        <td>4/5</td>
+        <td><input type="checkbox"></td>
+    </tr>
+</table>
+
+<form action="mailto:hs176237@umconnect.umt.edu?subject=Suggested%20Activity" method="post" enctype="text/plain">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br>
+    <label for="suggestion">Suggestion:</label>
+    <textarea id="suggestion" name="suggestion" required></textarea><br>
+    <input type="submit" value="Submit">
+</form>
+
+<a href="index.html" style="float: right; padding: 10px">HOME</a>
+<a href="activities.html" style="float: right; padding: 10px">ACTIVITIES</a>
+
