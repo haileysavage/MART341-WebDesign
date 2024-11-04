@@ -1,0 +1,73 @@
+body {
+    background-color: #f0e5d8; /* A light vintage background color */
+    font-family: 'Arial', sans-serif;
+    color: #5b2c2e; /* Dark red for text */
+    margin: 0;
+}
+
+#main-title {
+    text-align: center;
+    color: #c55a5a; /* A warm red for the main title */
+    margin-top: 20px;
+    font-size: 3em;
+}
+
+.mood-container {
+    position: relative;
+    text-align: center;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70vh; 
+    object-fit: cover;
+    z-index: -1; /* Keep the video in the background */
+    opacity: 0.5; /* Semi-transparent */
+}
+
+.image-gallery {
+    position: relative;
+    z-index: 1; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.overlay-image {
+    width: 150px; /* Adjust size as needed */
+    margin: 10px; /* Provide spacing */
+    border-radius: 10px; /* Rounded edges */
+    transition: transform 0.3s;
+}
+
+.overlay-image:hover {
+    transform: scale(1.1); 
+}
+
+.quotes {
+    position: relative;
+    z-index: 1; 
+    margin-top: 20px;
+    font-style: italic;
+    color: #b15957; /* A softer pinkish-red for quotes */
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8); /* Light background for better visibility */
+    border-radius: 8px; /* Rounded edges for quotes background */
+    max-width: 400px; /* Limit width of quotes section */
+    margin: 20px auto; /* Center quotes */
+}
+
+blockquote {
+    margin: 10px 0; /* Space between quotes */
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em;
+}
