@@ -1,0 +1,83 @@
+/* Body font (self-hosted) */
+@font-face {
+    font-family: 'CustomFont';
+    src: url('../fonts/CustomFont.woff2') format('woff2');
+}
+
+body {
+    background-color: #f0e5d8;
+    font-family: 'CustomFont', sans-serif; /* Self-hosted font */
+    color: #5b2c2e;
+    margin: 0;
+}
+
+#main-title {
+    font-family: 'Playfair Display', serif; /* Google Fonts library font */
+    text-align: center;
+    color: #c55a5a;
+    margin-top: 20px;
+    font-size: 3em;
+}
+
+.mood-container {
+    position: relative;
+    text-align: center;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.background-video {
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+    opacity: 0.6;
+}
+
+.overlay-image {
+    width: 150px;
+    margin: 10px;
+    border-radius: 10px;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.overlay-image:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+/* Styling for blockquotes */
+.quotes blockquote {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    color: #b15957;
+    margin: 10px auto;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    max-width: 400px;
+}
+
+/* Footer */
+footer {
+    font-family: 'CustomFont', sans-serif;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9em;
+    color: #5b2c2e;
+}
+
+/* Additional effects */
+.overlay-image::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #c55a5a;
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.overlay-image:hover::after {
+    opacity: 1;
+}
