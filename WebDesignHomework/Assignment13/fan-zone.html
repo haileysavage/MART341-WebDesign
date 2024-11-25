@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fan Zone - The Swiftiverse</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discography.html">Discography</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Debut</a></li>
+                        <li><a href="#">Fearless</a></li>
+                        <li><a href="#">Red</a></li>
+                        <li><a href="#">Speak Now</a></li>
+                        <li><a href="#">1989</a></li>
+                        <li><a href="#">Reputation</a></li>
+                        <li><a href="#">Lover</a></li>
+                        <li><a href="#">Folklore</a></li>
+                        <li><a href="#">Evermore</a></li>
+                        <li><a href="#">Midnights</a></li>
+                        <li><a href="#">TTPD</a></li>
+                    </ul>
+                </li>
+                <li><a href="fan-zone.html">Fan Zone</a></li>
+                <li><a href="about.html">About Taylor</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Fan Zone</h1>
+        <p>Find your go-to Taylor Swift album by taking this quiz!</p>
+
+        <section id="quiz">
+            <h2>What's Your Go-To Vibe?</h2>
+            <form id="quiz-form">
+                <label>
+                    <input type="radio" name="vibe" value="1989"> Fun and Energetic
+                </label><br>
+                <label>
+                    <input type="radio" name="vibe" value="Red"> Heartbreak and Healing
+                </label><br>
+                <label>
+                    <input type="radio" name="vibe" value="Folklore"> Ethereal and Poetic
+                </label><br>
+                <label>
+                    <input type="radio" name="vibe" value="Reputation"> Bold and Empowered
+                </label><br>
+                <label>
+                    <input type="radio" name="vibe" value="Debut"> Country and Nostalgic
+                </label><br>
+                <label>
+                    <input type="radio" name="vibe" value="Midnights"> Introspective and Lush
+                </label><br>
+                <label>
+                    <input type="radio" name="vibe" value="Fearless"> Romantic and Empowered
+                </label><br>
+                <label>
+                    <input type="radio" name="vibe" value="Speak Now"> Personal and Fairytale
+                </label><br>
+                <label>
+                    <input type="radio" name="vibe" value="Evermore"> Calm and Reflective
+                </label><br>
+                <label>
+                    <input type="radio" name="vibe" value="TTPD"> Vulnerable and Cathartic
+                </label><br>
+                <label>
+                    <input type="radio" name="vibe" value="Lover"> Whimsical and Bright
+                </label><br>
+                <button type="button" id="submit-quiz">Find My Album</button>
+            </form>
+
+            <div id="result" style="margin-top: 20px; font-size: 1.2em; color: #333;"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 The Swiftiverse</p>
+    </footer>
+
+    <script>
+        // JavaScript for the quiz
+        document.getElementById('submit-quiz').addEventListener('click', function() {
+            // Get the selected vibe
+            const selectedOption = document.querySelector('input[name="vibe"]:checked');
+            
+            // Check if an option was selected
+            if (!selectedOption) {
+                document.getElementById('result').textContent = "Please select a vibe to find your album!";
+                return;
+            }
+
+            // Get the album name from the selected option's value
+            const album = selectedOption.value;
+
+            // Display the result
+            const resultDiv = document.getElementById('result');
+            resultDiv.textContent = `Your go-to Taylor Swift album is: ${album}!`;
+
+            // Optional: Add Spotify link and image for the result
+            const albumLinks = {
+                "Debut": "https://open.spotify.com/album/7mzrIsaAjnXihW3InKjlC3",
+                "Fearless": "https://open.spotify.com/track/77sMIMlNaSURUAXq5coCxE",
+                "Speak Now": "https://open.spotify.com/track/5xXqyjLicvEpch72qEryFT",
+                "Red": "https://open.spotify.com/track/4OAuvHryIVv4kMDNSLuPt6",
+                "1989": "https://open.spotify.com/album/1o59UpKw81iHR0HPiSkJR0",
+                "Reputation": "https://open.spotify.com/album/6DEjYFkNZh67HP7R9PSZvv",
+                "Lover": "https://open.spotify.com/album/1NAmidJlEaVgA3MpcPFYGq",
+                "Folklore": "https://open.spotify.com/album/1pzvBxYgT6OVwJLtHkrdQK",
+                "Evermore": "https://open.spotify.com/album/6AORtDjduMM3bupSWzbTSG",
+                "Midnights": "https://open.spotify.com/album/1fnJ7k0bllNfL1kVdNVW1A",
+                "TTPD": "https://open.spotify.com/album/5H7ixXZfsNMGbIE5OBSpcb"
+                
+            };
+
+            const albumImages = {
+                "Debut": "images/debut.png",
+                "Fearless": "images/fearless.png",
+                "Speak Now": "images/speak now.png",
+                "Red": "images/red.png", 
+                "1989": "images/1989.png",
+                "Reputation": "images/reputation.png",
+                "Lover": "images/lover.png",
+                "Folklore": "images/folklore.png",
+                "Evermore": "images/evermore.png",
+                "Midnights": "images/midnights.png",
+                "TTPD": "images/ttpd.png"
+            };
+
+            resultDiv.innerHTML = `
+                Your go-to Taylor Swift album is: <strong>${album}</strong>!<br>
+                <a href="${albumLinks[album]}" target="_blank">Listen on Spotify</a><br>
+                <img src="${albumImages[album]}" alt="${album} Album Cover" style="width: 200px; margin-top: 10px; border-radius: 10px;">
+            `;
+        });
+    </script>
+</body>
+</html>
