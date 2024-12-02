@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Swiftiverse</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">The Swiftiverse</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="discography.html">Discography</a></li>
+                        <li class="nav-item"><a class="nav-link" href="fan-zone.html">Fan Zone</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero position-relative">
+        <video autoplay muted loop class="w-100 hero-video">
+            <source src="videos/taylor.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="hero-text position-absolute top-50 start-50 translate-middle text-white text-center">
+            <h1 class="display-4">Welcome to The Swiftiverse</h1>
+            <p>Your ultimate destination for all things Taylor Swift.</p>
+            <a href="discography.html" class="btn btn-primary">Explore Discography</a>
+        </div>
+    </section>
+
+    <!-- Feature Sections -->
+    <main class="container py-5">
+        <section class="features text-center">
+            <h2 class="mb-4">What You'll Find Here</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
+                        <img src="images/taylor_fearless.jpeg" class="card-img-top" alt="Taylor Swift performing">
+                        <div class="card-body">
+                            <h3 class="card-title">Iconic Performances</h3>
+                            <p class="card-text">Relive her unforgettable live shows and award-winning performances.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
+                        <img src="images/taylor_redhat.jpg" class="card-img-top" alt="Taylor Swift with fans">
+                        <div class="card-body">
+                            <h3 class="card-title">Fan Connections</h3>
+                            <p class="card-text">Join a community of Swifties celebrating her music and legacy.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
+                        <img src="images/eras.jpg" class="card-img-top" alt="Taylor Swift album covers">
+                        <div class="card-body">
+                            <h3 class="card-title">Complete Discography</h3>
+                            <p class="card-text">Discover every album, single, and lyric that makes Taylor an icon.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quote Section -->
+        <section class="quote py-5 text-center">
+            <blockquote class="blockquote">
+                <p>"Never be so kind, you forget to be clever." – Taylor Swift</p>
+            </blockquote>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center py-3">
+        <p class="mb-0">&copy; 2024 The Swiftiverse. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
