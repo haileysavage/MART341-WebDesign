@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fan Zone - The Swiftiverse</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">The Swiftiverse</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="discography.html">Discography</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="fan-zone.html">Fan Zone</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container py-5">
+        <h1 class="text-center mb-4">Fan Zone</h1>
+
+        <section id="quiz" class="mx-auto" style="max-width: 600px;">
+            <h2 class="text-center mb-4">What's Your Go-To Vibe?</h2>
+            <p class="text-center mb-5">Find your go-to Taylor Swift album by taking this quiz!</p>
+            <form id="quiz-form" class="border rounded p-4 shadow">
+                <fieldset class="mb-3">
+                    <legend class="mb-3">Choose a vibe:</legend>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="vibe" id="vibe1989" value="1989">
+                        <label class="form-check-label" for="vibe1989">Fun and Energetic</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="vibe" id="vibeRed" value="Red">
+                        <label class="form-check-label" for="vibeRed">Heartbreak and Healing</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="vibe" id="vibeFolklore" value="Folklore">
+                        <label class="form-check-label" for="vibeFolklore">Ethereal and Poetic</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="vibe" id="vibeReputation" value="Reputation">
+                        <label class="form-check-label" for="vibeReputation">Bold and Empowered</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="vibe" id="vibeDebut" value="Debut">
+                        <label class="form-check-label" for="vibeDebut">Country and Nostalgic</label>
+                    </div>
+                </fieldset>
+                <button type="button" id="submit-quiz" class="btn btn-primary w-100">Find My Album</button>
+            </form>
+
+            <!-- Result Section -->
+            <div id="result" class="mt-4 text-center"></div>
+        </section>
+    </main>
+
+    <!-- Fan Poll -->
+    <section id="fan-poll" class="mt-5">
+        <h2 class="text-center mb-4">Vote for Your Favorite Era!</h2>
+        <form id="poll-form" class="border rounded p-4 shadow mx-auto" style="max-width: 600px;">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="era" id="eraDebut" value="Debut (Taylor Swift)">
+                <label class="form-check-label" for="eraDebut">Debut (Taylor Swift)</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="era" id="eraFearless" value="Fearless">
+                <label class="form-check-label" for="eraFearless">Fearless</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="era" id="eraSpeakNow" value="Speak Now">
+                <label class="form-check-label" for="eraSpeakNow">Speak Now</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="era" id="eraRed" value="Red">
+                <label class="form-check-label" for="eraRed">Red</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="era" id="era1989" value="1989">
+                <label class="form-check-label" for="era1989">1989</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="era" id="eraReputation" value="reputation">
+                <label class="form-check-label" for="eraReputation">reputation</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="era" id="eraLover" value="Lover">
+                <label class="form-check-label" for="eraLover">Lover</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="era" id="eraFolklore" value="folklore">
+                <label class="form-check-label" for="eraFolklore">folklore</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="era" id="eraEvermore" value="evermore">
+                <label class="form-check-label" for="eraEvermore">evermore</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="era" id="eraMidnights" value="Midnights">
+                <label class="form-check-label" for="eraMidnights">Midnights</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="era" id="eraTTPD" value="TTPD">
+                <label class="form-check-label" for="eraTTPD">The Tortured Poets Department</label>
+            </div>
+            <button type="button" id="submit-poll" class="btn btn-primary w-100 mt-3">Submit Your Vote</button>
+        </form>
+        <div id="poll-result" class="mt-4 text-center"></div>
+    </section>
+    <script>
+        document.getElementById('submit-poll').addEventListener('click', function() {
+            const selectedEra = document.querySelector('input[name="era"]:checked');
+            const resultDiv = document.getElementById('poll-result');
+            if (!selectedEra) {
+                resultDiv.innerHTML = '<div class="alert alert-danger">Please select an era to vote!</div>';
+                return;
+            }
+            const era = selectedEra.value;
+            resultDiv.innerHTML = `<div class="alert alert-success">Thank you for voting for <strong>${era}</strong>!</div>`;
+        });
+    </script>
+
+<!-- Fan Trivia -->
+<section id="fan-trivia" class="mt-5">
+    <h2 class="text-center mb-4">Taylor Swift Trivia</h2>
+    <div id="trivia-question" class="text-center">
+        <p>What year was Taylor Swift's debut album released?</p>
+        <button class="btn btn-outline-secondary trivia-btn" data-answer="2006">2006</button>
+        <button class="btn btn-outline-secondary trivia-btn" data-answer="2008">2008</button>
+        <button class="btn btn-outline-secondary trivia-btn" data-answer="2010">2010</button>
+        <button class="btn btn-outline-secondary trivia-btn" data-answer="2012">2012</button>
+    </div>
+    <div id="trivia-result" class="mt-3 text-center"></div>
+</section>
+<script>
+    document.querySelectorAll('.trivia-btn').forEach(button => {
+        button.addEventListener('click', function() {
+            const answer = this.getAttribute('data-answer');
+            const resultDiv = document.getElementById('trivia-result');
+            if (answer === '2006') {
+                resultDiv.innerHTML = '<div class="alert alert-success">Correct! Taylor’s debut album was released in 2006.</div>';
+            } else {
+                resultDiv.innerHTML = '<div class="alert alert-danger">Incorrect! The correct answer is 2006.</div>';
+            }
+        });
+    });
+</script>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center py-3">
+        <p class="mb-0">&copy; 2024 The Swiftiverse</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // JavaScript for the quiz
+        document.getElementById('submit-quiz').addEventListener('click', function() {
+            const selectedOption = document.querySelector('input[name="vibe"]:checked');
+            const resultDiv = document.getElementById('result');
+
+            if (!selectedOption) {
+                resultDiv.innerHTML = `<div class="alert alert-danger">Please select a vibe to find your album!</div>`;
+                return;
+            }
+
+            const album = selectedOption.value;
+            const albumLinks = {
+                "1989": "https://open.spotify.com/album/1o59UpKw81iHR0HPiSkJR0",
+                "Red": "https://open.spotify.com/album/6kZ42qRrzov54LcAk4onW9",
+                "Folklore": "https://open.spotify.com/album/1pzvBxYgT6OVwJLtHkrdQK",
+                "Reputation": "https://open.spotify.com/album/6DEjYFkNZh67HP7R9PSZvv",
+                "Debut": "https://open.spotify.com/album/7mzrIsaAjnXihW3InKjlC3",
+            };
+
+            resultDiv.innerHTML = `
+                <div class="alert alert-success">
+                    Your go-to album is <strong>${album}</strong>!<br>
+                    <a href="${albumLinks[album]}" target="_blank" class="btn btn-link">Listen on Spotify</a>
+                </div>`;
+        });
+    </script>
+
+</body>
+</html>
